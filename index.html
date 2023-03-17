@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Website | Design</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">SKB Production</a>
+        <div class="menutoggle"></div>
+        <ul class="nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#protfolio">Protfolio</a></li>
+            <li><a href="#contact">Contact US</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <div class="content">
+            <h2>SKB Production</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quaerat fugiat ratione inventore commodi recusandae necessitatibus magnam, sit id, sed placeat! Animi in minima odio?</p>
+            <a href="#" class="btn">Contact Me</a>
+        </div>
+        <img src="my.png" alt="" class="me">
+    </section>
+    <section id="services">
+        <div class="sectext">
+            <h2>What I AM Great At</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sint error voluptate quaerat totam, porro, incidunt sequi aliquid doloremque quas voluptates inventore dolor explicabo, sunt modi ducimus dolore labore? Placeat?</p>
+        </div>
+        <div class="content">
+            <div class="servicesbx">
+                <img src="icon/web.png" alt="">
+                <h3>Web Development</h3>
+            </div>
+            <div class="servicesbx">
+                <img src="icon/webdes.png" alt="">
+                <h3>Web Design</h3>
+            </div>
+            <div class="servicesbx">
+                <img src="icon/game.png" alt="">
+                <h3>Game Development</h3>
+            </div>
+            <div class="servicesbx">
+                <img src="icon/andriod.png" alt="">
+                <h3>Andriod</h3>
+            </div>
+        </div>
+        <div class="center">
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+    </section>
+    <section id="protfolio">
+            <div class="sectext">
+                <h2>My Masterpiece Collection</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sint error voluptate quaerat totam, porro, incidunt sequi aliquid doloremque quas voluptates inventore dolor explicabo, sunt modi ducimus dolore labore? Placeat?</p>
+            </div>
+            <div class="content">
+                <div class="imgbx">
+                    <img style="width: 100%;" src="my_collection/match50.jpg" alt="">
+                </div>
+                <div class="imgbx">
+                    <img style="width: 100%;" src="my_collection/2.png" alt="">
+                </div>
+                <div class="imgbx">
+                    <img style="width: 100%;" src="my_collection/3.png" alt="">
+                </div>
+                <div class="imgbx">
+                    <img style="width: 100%;" src="my_collection/1.png" alt="">
+                </div>
+            </div>
+            <div class="center">
+                <a href="#" class="btn">View More</a>
+            </div>
+    </section>
+    <section id="contact">
+        <div class="sectext">
+            <h2>Way to Contact</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sint error voluptate quaerat totam, porro, incidunt sequi aliquid doloremque quas voluptates inventore dolor explicabo, sunt modi ducimus dolore labore? Placeat?</p>
+        </div>
+        <div class="content">
+            <a href="#"><ion-icon name="mail-unread-outline"></ion-icon>awaiskhanbangash7@gmail.com</a>
+            <a href="#"><ion-icon name="call-outline"></ion-icon>+92 348 93 97 97 3</a>
+            <a href="#"><ion-icon name="navigate-circle-outline"></ion-icon>Peshawar, Pakistan</a>
+        </div>
+        <div class="center">
+            <p class="copyright">© 2023 SKB Production. Created with 💙 by Bangash Studio</p>
+        </div>
+    </section>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    let list = document.querySelectorAll('.nav li');
+    function active(){
+        list.forEach((i) => 
+        i.classList.remove('active'));
+        this.classList.add('active');
+    }
+    list.forEach((i) => 
+    i.addEventListener('click',active));
+
+
+    let menutoggle = document.querySelector('.menutoggle');
+    let header = document.querySelector('header');
+    menutoggle.onclick = function(){
+        header.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
